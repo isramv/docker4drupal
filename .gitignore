@@ -1,2 +1,5 @@
 .idea/
 .docker-sync/
+coopervision/
+.mariadb-init/*
+!.mariadb-init/.gitkeep
