@@ -1,5 +1,5 @@
 .idea/
 .docker-sync/
 adaptived8/
-mariadb-init/*
+mariadb-init/**
 !mariadb-init/.gitkeep
