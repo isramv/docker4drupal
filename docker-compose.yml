@@ -4,7 +4,7 @@ services:
   mariadb:
     image: wodby/mariadb:$MARIADB_TAG
     container_name: "${PROJECT_NAME}_mariadb"
-    stop_grace_period: 30s
+#    stop_grace_period: 30s
     environment:
       MYSQL_ROOT_PASSWORD: $DB_ROOT_PASSWORD
       MYSQL_DATABASE: $DB_NAME
@@ -12,8 +12,8 @@ services:
       MYSQL_PASSWORD: $DB_PASSWORD
     ports:
       - '4306:3306'
-    volumes:
-      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
+#    volumes:
+#      - ./mariadb-init:/docker-entrypoint-initdb.d # Place init .sql file(s) here.
 #      - /path/to/mariadb/data/on/host:/var/lib/mysql # I want to manage volumes manually.
 
   php:
