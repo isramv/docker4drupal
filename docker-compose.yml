@@ -34,7 +34,7 @@ services:
     volumes:
 #      - ./:/var/www/html
 # For macOS users (https://wodby.com/stacks/drupal/docs/local/docker-for-mac/)
-      - ./coopervision/docroot:/var/www/html:cached # User-guided caching
+      - ./adaptived8/docroot:/var/www/html:cached # User-guided caching
 #      - docker-sync:/var/www/html # Docker-sync
 ## For Xdebug profiler files
 #      - files:/mnt/files
@@ -53,7 +53,7 @@ services:
     volumes:
 #      - ./:/var/www/html
 # For macOS users (https://wodby.com/stacks/drupal/docs/local/docker-for-mac/)
-      - ./coopervision/docroot:/var/www/html:cached # User-guided caching
+      - ./adaptived8/docroot:/var/www/html:cached # User-guided caching
 #      - docker-sync:/var/www/html # Docker-sync
     labels:
       - 'traefik.backend=nginx'
